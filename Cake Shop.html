@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Cake Shop_files/style.css">
+    <title>Cake Shop</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="./Cake Shop_files/logo.svg">
+        <nav class="nav-bar">
+            <ul>
+                <li><a class="text" id="home-title" href="#home">Home</a></li>
+                <li><a class="text" id="about-title" href="#about">About</a></li>
+                <li><a class="text" id="store-title" href="#store">Store</a></li>
+            </ul>
+        </nav>
+        <div class="holder">
+            <p class="number"></p>
+            <div class="cart-buttons">
+                <button class="cart" id="cart">0 Items</button>
+                <button class="clear" id="clear">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <a id="home"></a><div class="home"><a id="home"></a>
+        <img src="./Cake Shop_files/background.jpg">
+        <h1 class="welcome">Welcome to <span class="name">PATIL CAKES</span></h1>
+        
+        <button class="explore"><a href="#store" id="explore">Explore</a></button>
+    </div>
+
+    <a id="about"></a><div class="about-us"><a id="about"></a>
+        <div class="about-us-container">
+            <h1>About <span class="us">Us</span></h1>
+            <p>Step into a world of sweetness, let our creations become a sweet chapter in your story of joy. 
+              <br>  Where Every Slice Tells a Sweet Story
+             At PATIL CAKES, we dont just bake, we create edible dreams. <br>
+            Cheers to celebrating life's sweetness!</p>
+            <button class="about-us-explore"><a href="#store" id="about-us-explore">Explore</a></button>
+        </div>
+        <img src="./Cake Shop_files/cake-1.jpeg">
+    </div>
+
+    <a id="store"></a><div class="main"><a id="store"></a>
+        <div class="title-container">
+            <h1 class="our-store">Our <span class="store">Store</span></h1>
+        </div>
+        <div class="button-holder">
+            <button class="filter-button" id="all">All</button>
+            <button class="filter-button" id="cake-button">Cakes</button>
+            <button class="filter-button" id="cupcake-button">Cupcakes</button>
+            <button class="filter-button" id="sweet-button">Sweets</button>
+            <button class="filter-button" id="doughnut-button">Pasteries</button>
+        </div>
+
+        <div class="search-bar-container">
+            <p class="search-icon">🔍</p>
+            <input type="text" placeholder="item..." value="" class="search-bar" id="search-bar" onkeyup="textBarSearch()">
+        </div>
+
+        <div class="confec-holder">
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/sweets-1.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Macaroons</p>
+                    <p class="confec-price">₹<span class="price">399</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cupcake-1.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Vanilla Cupcake</p>
+                    <p class="confec-price">₹<span class="price">249</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cake-1.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Carrot Cake Slice</p>
+                    <p class="confec-price">₹<span class="price">999</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cake1.png" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Choco lava cupcake</p>
+                    <p class="confec-price">₹<span class="price">399</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cake3.png" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Sweet treat</p>
+                    <p class="confec-price">₹<span class="price">399</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cupcake-2.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Chocolate Cupcake</p>
+                    <p class="confec-price">₹<span class="price">459</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cake2.png" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Pasteries</p>
+                    <p class="confec-price">₹<span class="price">249</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cake-3.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Pink Rose Cake Slice</p>
+                    <p class="confec-price">₹<span class="price">1000</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/doughnut-2.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Chocolate Doughnut</p>
+                    <p class="confec-price">₹<span class="price">399</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+        
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/sweets-3.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Chocolate &amp; Raspberries</p>
+                    <p class="confec-price">₹<span class="price">299</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cupcake-3.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Blue Vanilla Cupcake</p>
+                    <p class="confec-price">₹<span class="price">250</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="./Cake Shop_files/cake-2.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Cream Cheese Cake Slice</p>
+                    <p class="confec-price">₹<span class="price">1200</span></p>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Thanks for visiting !</p>
+        </footer>
+    </div>
+
+    <script src="./Cake Shop_files/script.js"></script>
+<script>
+	
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
